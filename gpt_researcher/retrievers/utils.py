@@ -9,6 +9,7 @@ VALID_RETRIEVERS = [
     "exa",
     "google",
     "searchapi",
+    "search_plugin",
     "searx",
     "semantic_scholar",
     "serpapi",
