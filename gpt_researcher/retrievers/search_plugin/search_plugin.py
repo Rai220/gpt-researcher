@@ -44,13 +44,14 @@ class SearchPlugin():
 
         body = {
             "query": self.query,
-            "is_references_enabled": True,
-            "is_ranker_enabled": True,
-            "doc_count": max_results,
-            "text_sources": True,
-            "images_sources": {},
-            "send_debug_info": False,
-            "text_sources": {"rambler": {}}
+            "search_mode": "serpapi",
+            # "is_references_enabled": True,
+            # "is_ranker_enabled": True,
+            # "doc_count": max_results,
+            # "text_sources": True,
+            # "images_sources": {},
+            # "send_debug_info": False,
+            # "text_sources": {"rambler": {}}
         }
         
         headers = {
