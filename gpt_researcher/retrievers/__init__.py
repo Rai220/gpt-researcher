@@ -7,6 +7,7 @@ from .pubmed_central.pubmed_central import PubMedCentralSearch
 from .searx.searx import SearxSearch
 from .semantic_scholar.semantic_scholar import SemanticScholarSearch
 from .searchapi.searchapi import SearchApiSearch
+from .search_plugin.search_plugin import SearchPlugin
 from .serpapi.serpapi import SerpApiSearch
 from .serper.serper import SerperSearch
 from .tavily.tavily_search import TavilySearch
@@ -17,6 +18,7 @@ __all__ = [
     "CustomRetriever",
     "Duckduckgo",
     "SearchApiSearch",
+    "SearchPlugin",
     "SerperSearch",
     "SerpApiSearch",
     "GoogleSearch",

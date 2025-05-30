@@ -194,7 +194,8 @@ async def send_file_paths(websocket, file_paths: Dict[str, str]):
 def get_config_dict(
     langchain_api_key: str, openai_api_key: str, tavily_api_key: str,
     google_api_key: str, google_cx_key: str, bing_api_key: str,
-    searchapi_api_key: str, serpapi_api_key: str, serper_api_key: str, searx_url: str
+    searchapi_api_key: str, serpapi_api_key: str, serper_api_key: str, searx_url: str,
+    search_plugin_key: str
 ) -> Dict[str, str]:
     return {
         "LANGCHAIN_API_KEY": langchain_api_key or os.getenv("LANGCHAIN_API_KEY", ""),
@@ -205,6 +206,7 @@ def get_config_dict(
         "BING_API_KEY": bing_api_key or os.getenv("BING_API_KEY", ""),
         "SEARCHAPI_API_KEY": searchapi_api_key or os.getenv("SEARCHAPI_API_KEY", ""),
         "SERPAPI_API_KEY": serpapi_api_key or os.getenv("SERPAPI_API_KEY", ""),
+        "SEARCH_PLUGIN_KEY": search_plugin_key or os.getenv("SEARCH_PLUGIN_KEY", ""),
         "SERPER_API_KEY": serper_api_key or os.getenv("SERPER_API_KEY", ""),
         "SEARX_URL": searx_url or os.getenv("SEARX_URL", ""),
         "LANGCHAIN_TRACING_V2": os.getenv("LANGCHAIN_TRACING_V2", "true"),

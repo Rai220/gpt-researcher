@@ -23,6 +23,10 @@ def get_retriever(retriever: str):
             from gpt_researcher.retrievers import SearchApiSearch
 
             return SearchApiSearch
+        case "search_plugin":
+            from gpt_researcher.retrievers import SearchPlugin
+
+            return SearchPlugin
         case "serpapi":
             from gpt_researcher.retrievers import SerpApiSearch
 
